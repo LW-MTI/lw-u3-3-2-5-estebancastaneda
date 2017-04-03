@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>3.2.5 Bootstrap: Aplicación con Tabs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#nuevoU">Nuevo usuario</a></li>
+                <li><a data-toggle="tab" href="#consultaU">Consulta usuarios</a></li>
+                <li><a data-toggle="tab" href="#nuevoA">Nuevo artículo</a></li>
+                <li><a data-toggle="tab" href="#consultaA">Consulta artículo</a></li>
+            </ul>
+            
+            <div class="tab-content">
+                <div id="nuevoU" class="tab-pane fade in active">
+                    <h3>Usuario</h3>
+                    <h4>Registrar nuevo</h4>
+                    <hr/>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input class="form-control" type="text" name="nombre" id="nombre"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña:</label>
+                            <input class="form-control" type="password" name="contrasena" id="contrasena"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="edad">Edad:</label>
+                            <input class="form-control" type="number" name="edad" id="edad"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input class="form-control" type="email" name="email" id="email"/>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="consultaU" class="tab-pane fade">
+                    <br/>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre(s)</th>
+                                    <th>Apellido(s)</th>
+                                    <th>Sexo</th>
+                                    <th>Nivel escolar</th>
+                                    <th>Perfil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Esteban</td>
+                                    <td>Castañeda</td>
+                                    <td>Masculino</td>
+                                    <td>Licenciatura</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Pablo</td>
+                                    <td>Castañeda</td>
+                                    <td>Masculino</td>
+                                    <td>Preescolar</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Luis</td>
+                                    <td>Castañeda</td>
+                                    <td>Masculino</td>
+                                    <td>Licenciatura</td>
+                                    <td>C</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="nuevoA" class="tab-pane fade">
+                    <h3>Artículo</h3>
+                    <h4>Registrar nuevo</h4>
+                    <hr/>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreA">Nombre:</label>
+                            <input class="form-control" type="text" name="nombreA" id="nombreA"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="descrip">Descripción:</label>
+                            <input class="form-control" type="text" name="descrip" id="descrip"/>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="consultaA" class="tab-pane fade">
+                    <br/>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Silla ejecutiva</td>
+                                    <td>Silla giratoria en color Negro</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Escritorio ejecutivo</td>
+                                    <td>Escritorio de 3 cajones con credenza en color Chocolate</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
